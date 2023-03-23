@@ -10,10 +10,16 @@
         </ul>
 
         <p v-show="mostraremail">Mande uma mensagem para: {{ email }}</p>
+
+        <p>para acessar meu portfolio <a v-bind:href="meu_link" target="_blank">Lick aqui</a> </p>
+
+        <Perfil/>
   </div>
 </template>
 
 <script>
+
+import Perfil from './Perfil.vue'
 
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
@@ -23,9 +29,11 @@ export default {
       return {
         trabalhando:true, 
         mostraremail:false,
-          email:"email@email.com"
+          email:"email@email.com",
+          meu_link:'https://github.com/Muethea'
       }
-    }
+    },
+    components:{Perfil}
 }
 </script>
 
