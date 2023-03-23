@@ -3,10 +3,8 @@
     <h1>Esta é a descrição da pessoa: {{ nome }}</h1>
    <Info/>
 
-   <div>
-    <h1>Pessoa</h1>
-    <Info/>
-   </div>
+
+     
   </div>
 </template>
 
