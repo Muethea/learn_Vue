@@ -1,16 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+<RenderView/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RenderView from './components/RenderView.vue';
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: "App",
+    components: { RenderView }
 }
 </script>
 
